@@ -1,0 +1,433 @@
+{
+  "scenario_visual": {
+    "22a73f88-d5fd-4e09-b8a7-224c4552f9f2": {
+      "edges": [
+        {
+          "animated": true,
+          "id": "e_85af2ab9-bea7-4a84-ae6b-aaf7ec71cf4b-f_connect_to-t_11474b5a-518e-4a02-afef-81939d46ff14",
+          "source": "85af2ab9-bea7-4a84-ae6b-aaf7ec71cf4b",
+          "sourceHandle": "connect_to",
+          "target": "11474b5a-518e-4a02-afef-81939d46ff14"
+        },
+        {
+          "animated": true,
+          "id": "e_11474b5a-518e-4a02-afef-81939d46ff14-f_no_input-t_fa3902aa-ed11-4ff7-91b9-8529f1c28ac7",
+          "source": "11474b5a-518e-4a02-afef-81939d46ff14",
+          "sourceHandle": "no_input",
+          "target": "fa3902aa-ed11-4ff7-91b9-8529f1c28ac7"
+        },
+        {
+          "animated": true,
+          "id": "e_fa3902aa-ed11-4ff7-91b9-8529f1c28ac7-f_connect_to-t_ca65b70c-78db-4c97-be00-18959c7457a1",
+          "source": "fa3902aa-ed11-4ff7-91b9-8529f1c28ac7",
+          "sourceHandle": "connect_to",
+          "target": "ca65b70c-78db-4c97-be00-18959c7457a1"
+        },
+        {
+          "animated": true,
+          "id": "e_d57062a5-ec5e-4030-946c-ac95de677e1d-f_no_matches-t_643e52f3-fea9-4cb9-a7db-b36e3d76e22a",
+          "source": "d57062a5-ec5e-4030-946c-ac95de677e1d",
+          "sourceHandle": "no_matches",
+          "target": "643e52f3-fea9-4cb9-a7db-b36e3d76e22a"
+        },
+        {
+          "animated": true,
+          "id": "e_11474b5a-518e-4a02-afef-81939d46ff14-f_86690ea0-e7d3-4202-8466-aeb0f1ac3080-t_643e52f3-fea9-4cb9-a7db-b36e3d76e22a",
+          "source": "11474b5a-518e-4a02-afef-81939d46ff14",
+          "sourceHandle": "86690ea0-e7d3-4202-8466-aeb0f1ac3080",
+          "target": "643e52f3-fea9-4cb9-a7db-b36e3d76e22a"
+        },
+        {
+          "animated": true,
+          "id": "e_cef3c584-8e6a-4549-9eac-2907ada7e9cc-f_connect_to-t_5dd44905-d4c5-4744-b6c2-ac9dccf8c9c3",
+          "source": "cef3c584-8e6a-4549-9eac-2907ada7e9cc",
+          "sourceHandle": "connect_to",
+          "target": "5dd44905-d4c5-4744-b6c2-ac9dccf8c9c3"
+        },
+        {
+          "animated": true,
+          "id": "e_5dd44905-d4c5-4744-b6c2-ac9dccf8c9c3-f_connect_to-t_cef3c584-8e6a-4549-9eac-2907ada7e9cc",
+          "source": "5dd44905-d4c5-4744-b6c2-ac9dccf8c9c3",
+          "sourceHandle": "connect_to",
+          "target": "cef3c584-8e6a-4549-9eac-2907ada7e9cc"
+        }
+      ],
+      "nodes": [
+        {
+          "data": {
+            "callback_url": "",
+            "contexts": [
+              {
+                "context_id": "16f3e0f9-5dd3-4ac8-a263-2ad8cf8ee802",
+                "context_name": "CONTEXT.",
+                "context_value": ""
+              }
+            ],
+            "define_reports": [],
+            "input_slots": [],
+            "label": "",
+            "nlp_engine": {
+              "nlp_engine_id": "1",
+              "nlp_engine_name": "Deep Learning"
+            },
+            "node_name": "Scenario Start",
+            "speech_recognize": {
+              "recognize_id": "",
+              "speech_id": ""
+            },
+            "text_to_speech": {
+              "language_id": "",
+              "voice_id": ""
+            }
+          },
+          "id": "85af2ab9-bea7-4a84-ae6b-aaf7ec71cf4b",
+          "position": {
+            "x": 259.48416084489554,
+            "y": 439.17763359801165
+          },
+          "type": "scenarioStartNode"
+        },
+        {
+          "data": {
+            "data_message": {
+              "message_text": "",
+              "slate_data": [
+                {
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            "description": "",
+            "label": "",
+            "node_name": "say_message_1",
+            "say_or_play_message": "SAY_MESSAGE"
+          },
+          "id": "5dd44905-d4c5-4744-b6c2-ac9dccf8c9c3",
+          "position": {
+            "x": 458.44828281304876,
+            "y": 192.25825000805935
+          },
+          "type": "sayMessageNode"
+        },
+        {
+          "data": {
+            "data_message": {
+              "message_text": "hello",
+              "slate_data": [
+                {
+                  "children": [
+                    {
+                      "text": "hello"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            "description": "",
+            "label": "",
+            "node_name": "say_message_2",
+            "say_or_play_message": "SAY_MESSAGE"
+          },
+          "id": "cef3c584-8e6a-4549-9eac-2907ada7e9cc",
+          "position": {
+            "x": 127.68596724535735,
+            "y": -5.689856316284818
+          },
+          "type": "sayMessageNode"
+        },
+        {
+          "data": {
+            "call_data": {
+              "data_slate": null,
+              "data_text": ""
+            },
+            "call_type": "CALL_SIP",
+            "label": "",
+            "node_name": "forward_call_1"
+          },
+          "id": "1a8d00e0-88d6-4eda-bd72-5015194bf308",
+          "position": {
+            "x": 1872.2103616627373,
+            "y": 578.8272401628465
+          },
+          "type": "forwardCallNode"
+        },
+        {
+          "data": {
+            "api_url": {
+              "data_slate": null,
+              "data_text": ""
+            },
+            "description": "",
+            "label": "",
+            "method_type": "GET",
+            "node_name": "http_api_1",
+            "set_headers": [],
+            "set_params": [],
+            "set_variables": []
+          },
+          "id": "0209d925-2e21-4180-bfd2-9ea4d1a30686",
+          "position": {
+            "x": 1662.6666666666667,
+            "y": 264
+          },
+          "type": "httpApiNode"
+        },
+        {
+          "data": {
+            "label": "",
+            "node_name": "scenario_end_1"
+          },
+          "id": "db3c2626-dbd4-4f8d-86b1-7912d5a5dbf1",
+          "position": {
+            "x": 1040.0456822500473,
+            "y": 985.2647447694051
+          },
+          "type": "scenarioEndNode"
+        },
+        {
+          "data": {
+            "flows": [
+              {
+                "flow_id": "86690ea0-e7d3-4202-8466-aeb0f1ac3080",
+                "flow_name": "bận",
+                "intents": [
+                  {
+                    "intent_id": "4343",
+                    "intent_value": "busy"
+                  }
+                ]
+              },
+              {
+                "flow_id": "e6aecfc1-cd54-439e-828f-b2a6be2829f2",
+                "flow_name": "oke",
+                "intents": [
+                  {
+                    "intent_id": "4344",
+                    "intent_value": "ok"
+                  }
+                ]
+              }
+            ],
+            "input_data": {
+              "input_speech": {
+                "silence_timeout": 5,
+                "speech_max": 30,
+                "speech_timeout": 1
+              }
+            },
+            "label": "",
+            "nlp_setting": {
+              "entities": [],
+              "using_faq_engine": false
+            },
+            "node_name": "listen_1"
+          },
+          "id": "11474b5a-518e-4a02-afef-81939d46ff14",
+          "position": {
+            "x": 885.3333333333334,
+            "y": 378.6666666666667
+          },
+          "type": "listenNode"
+        },
+        {
+          "data": {
+            "flows": [],
+            "input_data": {
+              "input_speech": {
+                "silence_timeout": 5,
+                "speech_max": 30,
+                "speech_timeout": 1
+              }
+            },
+            "label": "",
+            "nlp_setting": {
+              "entities": [],
+              "using_faq_engine": false
+            },
+            "node_name": "listen_2"
+          },
+          "id": "77be787f-26ab-4f08-b066-d93274b14f1a",
+          "position": {
+            "x": 675.6526155488086,
+            "y": 809.5985857828423
+          },
+          "type": "listenNode"
+        },
+        {
+          "data": {
+            "flows": [],
+            "label": "",
+            "node_name": "split_base_on_1",
+            "variable_compare": null
+          },
+          "id": "d57062a5-ec5e-4030-946c-ac95de677e1d",
+          "position": {
+            "x": 1338.6666666666663,
+            "y": 476
+          },
+          "type": "splitBaseOnNode"
+        },
+        {
+          "data": {
+            "label": "",
+            "node_name": "set_variable_1",
+            "variables": [
+              {
+                "variable_id": "SYSTEM.MESSAGE",
+                "variable_name": "SYSTEM.MESSAGE",
+                "variable_type": "SYSTEM_VARIABLE",
+                "variable_value": {
+                  "variable_slate": [
+                    {
+                      "children": [
+                        {
+                          "text": "1"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  ],
+                  "variable_text": "1"
+                }
+              }
+            ]
+          },
+          "id": "ca65b70c-78db-4c97-be00-18959c7457a1",
+          "position": {
+            "x": 1342.6666666666663,
+            "y": 30.66666666666663
+          },
+          "type": "setVariableNode"
+        },
+        {
+          "data": {
+            "label": "",
+            "node_name": "check_point_1"
+          },
+          "id": "fa3902aa-ed11-4ff7-91b9-8529f1c28ac7",
+          "position": {
+            "x": 803.9151515563196,
+            "y": -156.21036166273737
+          },
+          "type": "checkPointNode"
+        },
+        {
+          "data": {
+            "label": "",
+            "node_name": "shortcut_1",
+            "node_target": {
+              "node_id": "fa3902aa-ed11-4ff7-91b9-8529f1c28ac7",
+              "node_name": "check_point_1",
+              "node_type": "checkPointNode"
+            },
+            "scenario_target": {
+              "scenario_id": "22a73f88-d5fd-4e09-b8a7-224c4552f9f2",
+              "scenario_name": "Scenario Start",
+              "scenario_type": "MAIN_SCENARIO"
+            }
+          },
+          "id": "643e52f3-fea9-4cb9-a7db-b36e3d76e22a",
+          "position": {
+            "x": 1668.8358421526964,
+            "y": 853.7291625755296
+          },
+          "type": "shortcutNode"
+        }
+      ],
+      "scenario_id": "22a73f88-d5fd-4e09-b8a7-224c4552f9f2",
+      "scenario_name": "Scenario Start",
+      "scenario_order_id": 0,
+      "scenario_type": "MAIN_SCENARIO",
+      "viewport": {
+        "x": 27.155952934703635,
+        "y": 121.93609877885498,
+        "zoom": 0.4308484115119853
+      }
+    },
+    "4982b5f9-2699-4694-9c23-48323e4e44e0": {
+      "edges": [],
+      "nodes": [
+        {
+          "data": {
+            "label": "",
+            "node_name": "Sub scenario 3"
+          },
+          "id": "fb6d4a68-7de9-4afc-b1cb-ab2ca9415c0d",
+          "position": {
+            "x": 350,
+            "y": 450
+          },
+          "type": "subScenarioStartNode"
+        }
+      ],
+      "scenario_id": "4982b5f9-2699-4694-9c23-48323e4e44e0",
+      "scenario_name": "Sub scenario 3",
+      "scenario_order_id": 3,
+      "scenario_type": "SUB_SCENARIO",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "zoom": 0.75
+      }
+    },
+    "c2ad200f-980e-453f-82dd-57826ffa4a1f": {
+      "edges": [],
+      "nodes": [
+        {
+          "data": {
+            "label": "",
+            "node_name": "Sub scenario 1"
+          },
+          "id": "59644cd9-6979-4652-aa95-432173ac3bdd",
+          "position": {
+            "x": 350,
+            "y": 450
+          },
+          "type": "subScenarioStartNode"
+        }
+      ],
+      "scenario_id": "c2ad200f-980e-453f-82dd-57826ffa4a1f",
+      "scenario_name": "Sub scenario 1",
+      "scenario_order_id": 1,
+      "scenario_type": "SUB_SCENARIO",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "zoom": 0.75
+      }
+    },
+    "ddcdb9e0-0718-484a-ae9c-620ad3ae225c": {
+      "edges": [],
+      "nodes": [
+        {
+          "data": {
+            "label": "",
+            "node_name": "Sub scenario 2"
+          },
+          "id": "d630ac66-1e37-40e7-b00e-b6187d86bdcf",
+          "position": {
+            "x": 350,
+            "y": 450
+          },
+          "type": "subScenarioStartNode"
+        }
+      ],
+      "scenario_id": "ddcdb9e0-0718-484a-ae9c-620ad3ae225c",
+      "scenario_name": "Sub scenario 2",
+      "scenario_order_id": 2,
+      "scenario_type": "SUB_SCENARIO",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "zoom": 0.75
+      }
+    }
+  }
+}
