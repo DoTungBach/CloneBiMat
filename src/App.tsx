@@ -21,11 +21,7 @@ import { v4 } from "uuid";
 import data from "./data.json";
 import { ChakraProvider } from "@chakra-ui/react";
 import CreateNode from "./components/Sidebar/CreateNode";
-import TextUpdaterNode from "./components/Nodes/SayMessage/SayMessage";
-
-const nodeTypes = {
-  textUpdater: TextUpdaterNode,
-};
+import TextUpdaterNode from "./components/Nodes/SayMessage/SayMessage"; // Component tùy chỉnh
 
 const defaultEdgeOptions = {
   animated: true,
@@ -35,22 +31,16 @@ const defaultEdgeOptions = {
   },
 };
 
+const nodeTypes = {
+  textUpdater: TextUpdaterNode, // Đảm bảo nodeTypes có component
+};
+
 const App: React.FC = () => {
-  console.log(
-    data.scenario_visual["22a73f88-d5fd-4e09-b8a7-224c4552f9f2"].nodes
-  );
   const initialNodes: Node[] =
     data.scenario_visual["22a73f88-d5fd-4e09-b8a7-224c4552f9f2"].nodes;
-
-  // const initialEdges: Edge[] = [
-  //   { id: "e1-2", source: "1", target: "2" },
-  //   { id: "e2-3", source: "2", target: "3", animated: true },
-  // ];
   const initialEdges: Edge[] =
     data.scenario_visual["22a73f88-d5fd-4e09-b8a7-224c4552f9f2"].edges;
 
-  // const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
-  // const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [nodes, setNodes] = useState<Node[]>(initialNodes);
   const [edges, setEdges] = useState<Edge[]>(initialEdges);
 
@@ -75,7 +65,8 @@ const App: React.FC = () => {
       ...nds,
       {
         id,
-        data: { label: "New Node" },
+        type: "textUpdater", // Đặt type cho node
+        data: { label: "New Custom Node" }, // Dữ liệu hiển thị
         position: { x: 100, y: 100 },
       },
     ]);
@@ -92,7 +83,7 @@ const App: React.FC = () => {
             onEdgesChange={onEdgesChange}
             onConnect={onConnect}
             defaultEdgeOptions={defaultEdgeOptions}
-            nodeTypes={nodeTypes}
+            nodeTypes={nodeTypes} // Truyền nodeTypes vào ReactFlow
           >
             <CreateNode />
             <Background variant={BackgroundVariant.Dots} gap={12} size={1} />

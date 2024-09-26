@@ -1,39 +1,14 @@
-import { useCallback } from "react";
+import React from "react";
 import { Handle, Position } from "@xyflow/react";
 
-const handleStyle = { left: 10 };
-
-function TextUpdaterNode({ data, isConnectable }: any) {
-  const onChange = useCallback((evt: any) => {
-    console.log(evt.target.value);
-  }, []);
-
+const TextUpdaterNode = ({ data }: any) => {
   return (
-    <div className="text-updater-node">
-      <Handle
-        type="target"
-        position={Position.Top}
-        isConnectable={isConnectable}
-      />
-      <div>
-        <label htmlFor="text">Text: {data}</label>
-        <input id="text" name="text" onChange={onChange} className="nodrag" />
-      </div>
-      <Handle
-        type="source"
-        position={Position.Bottom}
-        id="a"
-        style={handleStyle}
-        isConnectable={isConnectable}
-      />
-      <Handle
-        type="source"
-        position={Position.Bottom}
-        id="b"
-        isConnectable={isConnectable}
-      />
+    <div style={{ padding: 10, backgroundColor: "lightblue", borderRadius: 5 }}>
+      <Handle type="target" position={Position.Top} />
+      <div>{data.label || "Default Text"}</div>
+      <Handle type="source" position={Position.Bottom} />
     </div>
   );
-}
+};
 
 export default TextUpdaterNode;
